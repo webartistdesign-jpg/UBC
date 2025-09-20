@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <link rel="stylesheet" href="styles.css" />
+
+  <head>
+    <!-- 
+  Step 1: Start your HTML document with <!DOCTYPE html> 
+  -->
+    <title>html Element Lesson</title>
+
+    <!-- 
+  Step 2: Add a <title> inside the <head> with any page title you like 
+  --></head>
+
+  <body>
+    <!-- 
+  Step 3: Add a main heading (h1) for the page 
+  -->
+    <h1>This is a Profile DB</h1>
+    <!-- 
+  Step 4: Add a paragraph (p) with a short introduction 
+  -->
+    <p>In this pharagraph we will learn about HTML elements</p>
+    <br />
+
+    <!--        
+  Step 5: Add a div with id="media" 
+          Inside it: 
+            - Add a heading (h2) 
+            - Add an image (img) with src and alt attributes 
+            - Add a link (a) to an external site 
+  -->
+    <div id="media">
+      <h2>Image & links</h2>
+      <a href="https://www.google.com"> Visit my Profile </a>
+      <br />
+      <img src="lego-boy.jpg" alt="Lego Image" width="450px" height="450px" />
+    </div>
+    <!-- 
+  Step 6: Understand the purpose of "id" 
+          - Add an id to one element (like the div above) 
+          - Observe how it uniquely identifies the element 
+  -->
+    <div id="unique-element">
+      <p>This div has a unique id</p>
+    </div>
+    <!-- 
+  Step 7: Add a div with id="table-section" 
+          Inside it: 
+            - Add a heading (h2) 
+            - Create a table with 3 rows and 2 columns 
+  -->
+    <div id="table-section">
+      <table border="1px">
+        <tr>
+          <th>S.No</th>
+          <th>Student Name</th>
+          <th>Phone Number</th>
+          <th>Email</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>John Doe</td>
+          <td>3636-356-355</td>
+          <td>oscaradworks@gmail.com</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Jane Smith</td>
+          <td>3636-356-355</td>
+          <td>webartistdesign@gmail.com</td>
+        </tr>
+      </table>
+
+      <!-- 
+  Step 8: Add a div with id="form-section" 
+           Inside it: 
+             - Add a heading (h2) 
+             - Create a form with 2 <fieldset> groups 
+                 Fieldset 1: Text fields 
+                   * Name (text) 
+                   * Email (email) 
+                   * Password (password) 
+                 Fieldset 2: Other input types 
+                   * Age (number) 
+                   * Date of Birth (date) 
+                   * Subscribe (checkbox) 
+                   * Gender (radio buttons: Male / Female / Other) 
+             - Add a submit button at the end 
+  -->
+      <div id="form-section">
+        <form>
+          <fieldset>
+            <legend>Basic Inputs</legend>
+            <label>Name</label>
+            <input
+              type="text"
+              id="sname"
+              name="sname"
+              placeholder="enter your name"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Email</legend>
+            <input
+              type="email"
+              id="semail"
+              noname="noname"
+              placeholder="enter your email"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Password</legend>
+            <input
+              type="password"
+              id="spassword"
+              noname="spassword"
+              placeholder="enter your password"
+            />
+          </fieldset>
+
+          <fieldset>
+            <label for="Gender">Gender</label>
+            <input type="radio" name="Gender" value="M" id="Gender_m" /> Male
+            <input type="radio" name="Gender" value="F" id="Gender_f" /> Female
+            <input type="radio" name="Gender" value="O" id="Gender_o" /> Other
+
+            <label for="meal_preference">Meal Preference:</label>
+            <select name="meal_preference" id="meal_preference">
+              <option value="vegetarian">Vegetarian</option>
+              <option value="non_vegetarian">Non-Vegetarian</option>
+              <option value="vegan">Vegan</option>
+            </select>
+          </fieldset>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <!-- 
+  Step 9: Add a line break (<br>) somewhere in the page 
+  -->
+
+    <!-- 
+  Step 10: Add a horizontal line (<hr>) somewhere in the page 
+  -->
+
+    <!-- 
+  Step 11: Add a span inside a paragraph to highlight some text 
+  -->
+
+    <!-- 
+  Step 12: Understand the difference between block and inline elements 
+  -->
+
+    <!-- 
+  Step 13: Add a comment anywhere with your name 
+  -->
+
+    <!-- 
+  Step 14: Final step: View the DOM tree using a visualizer
+  --></body>
+</html>
